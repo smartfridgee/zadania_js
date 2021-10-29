@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadania JS</title>
+    <script defer src="main.js"></script>
+    <style>
+        .output{
+            border: 1px solid black;
+            width: min(300px, 100%);
+            min-height: 200px;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section id="zadanie1">
+        <h2>Zadanie 1</h2>
+        <p>Wpisując wartość w pole tekstowe poniżej, znacznik nagłowka poz.5 (pod inputem) ma tą wartość wyświetlać</p>
+        <input type="text" id="zadanie1_input" onkeyup="zadanie1()">
+        <h5 id="zadanie1_output">Tutaj wynik</h5>
+    </section>
+    <hr>
+    <section id="zadanie2">
+        <h2>Zadanie 2</h2>
+        <p>W pliku main.js, w funkcji zadanie2 masz podaną tablicę. Wypisz każdy z jej elementów do osobnego paragrafu w polu poniżej.</p>
+        <section class="output" id="zadanie2_output">
+
+        </section>
+    </section>
+    <hr>
+    <section id="zadanie3">
+        <h2>Zadanie 3</h2>
+        <p>Prosty kalkulator. Wynik ma wyświetlać się na bierząco przy wprowadzanych zmianach.</p>
+        <input type="number" id="zadanie3_fn" onkeyup="zadanie3()">
+        <select id="zadanie3_select" onchange="zadanie3()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">&times</option>
+            <option value="/">&#247</option>
+        </select>
+        <input type="number" id="zadanie3_sn" onkeyup="zadanie3()">
+        =
+        <span id="zadanie3_output">Tutaj wynik</span>
+    </section>
+    <hr>
+    <section id="zadanie4">
+        <h2>Zadanie 4</h2>
+        <p>W pliku main.js w funkcji zadanie4 masz podaną tablicę z obiektami. Wpisując wartość w poniższym impucie, wyświetl imię i nazwisko osoby, która mieszka w podanym w impucie mieście. Jednej osobie przypada jeden rząd w postaci znacznika paragrafu. Osoby mają być automatycznie numerowane.</p>
+        Miasto: <input type="text" id="zadanie4_input" onchange="zadanie4()">
+        <br><br>
+        <section class="output" id="zadanie4_output">
+
+        </section>
+    </section>
+</body>
+</html>
